@@ -17,7 +17,7 @@ class ApartmentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create apartment" do
     assert_difference('Apartment.count') do
-      post apartments_url, params: { apartment: { address_1: @apartment.address_1, address_2: @apartment.address_2, avail_date: @apartment.avail_date, baths: @apartment.baths, beds: @apartment.beds, city: @apartment.city, email: @apartment.email, list_date: @apartment.list_date, manager: @apartment.manager, pets: @apartment.pets, phone: @apartment.phone, price: @apartment.price, state: @apartment.state, type: @apartment.type, zip: @apartment.zip } }
+      post apartments_url, params: { apartment: { address_1: @apartment.address_1, address_2: @apartment.address_2, avail_date: @apartment.avail_date, baths: @apartment.baths, beds: @apartment.beds, city: @apartment.city, email: @apartment.email, list_date: @apartment.list_date, manager: @apartment.manager, pets: @apartment.pets, phone: @apartment.phone, price: @apartment.price, state: @apartment.state, dwelling: @apartment.dwelling, zip: @apartment.zip } }
     end
 
     assert_redirected_to apartment_url(Apartment.last)
@@ -34,7 +34,7 @@ class ApartmentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update apartment" do
-    patch apartment_url(@apartment), params: { apartment: { address_1: @apartment.address_1, address_2: @apartment.address_2, avail_date: @apartment.avail_date, baths: @apartment.baths, beds: @apartment.beds, city: @apartment.city, email: @apartment.email, list_date: @apartment.list_date, manager: @apartment.manager, pets: @apartment.pets, phone: @apartment.phone, price: @apartment.price, state: @apartment.state, type: @apartment.type, zip: @apartment.zip } }
+    patch apartment_url(@apartment), params: { apartment: { address_1: @apartment.address_1, address_2: @apartment.address_2, avail_date: @apartment.avail_date, baths: @apartment.baths, beds: @apartment.beds, city: @apartment.city, email: @apartment.email, list_date: @apartment.list_date, manager: @apartment.manager, pets: @apartment.pets, phone: @apartment.phone, price: @apartment.price, state: @apartment.state, dwelling: @apartment.dwelling, zip: @apartment.zip } }
     assert_redirected_to apartment_url(@apartment)
   end
 

@@ -27,7 +27,7 @@ class ApartmentsTest < ApplicationSystemTestCase
     fill_in "Phone", with: @apartment.phone
     fill_in "Price", with: @apartment.price
     fill_in "State", with: @apartment.state
-    fill_in "Type", with: @apartment.type
+    fill_in "Dwelling", with: @apartment.dwelling
     fill_in "Zip", with: @apartment.zip
     click_on "Create Apartment"
 
@@ -52,7 +52,7 @@ class ApartmentsTest < ApplicationSystemTestCase
     fill_in "Phone", with: @apartment.phone
     fill_in "Price", with: @apartment.price
     fill_in "State", with: @apartment.state
-    fill_in "Type", with: @apartment.type
+    fill_in "Dwelling", with: @apartment.dwelling
     fill_in "Zip", with: @apartment.zip
     click_on "Update Apartment"
 

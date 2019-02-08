@@ -9,7 +9,7 @@ class CreateApartments < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.integer :zip
-      t.string :type
+      t.string :dwelling
       t.integer :beds
       t.float :baths
       t.string :pets

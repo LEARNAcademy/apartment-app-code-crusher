@@ -1,5 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
+
 
 class AllApartments extends React.Component {
   constructor(props){
@@ -21,6 +24,7 @@ render () {
   return (
     <div>
       <h1>Apartment List</h1>
+      <Link to="/member/new_apartment">Create a new listing</Link>
       <table>
         <tbody>
           <tr>
@@ -37,7 +41,7 @@ render () {
               <tr key={index}>
                 <td>{apartment.avail_date}</td>
                 <td>{apartment.price}</td>
-                <td>{apartment.type}</td>
+                <td>{apartment.dwelling}</td>
                 <td>{apartment.beds}</td>
                 <td>{apartment.baths}</td>
                 <td>{apartment.city}, {apartment.state}</td>
