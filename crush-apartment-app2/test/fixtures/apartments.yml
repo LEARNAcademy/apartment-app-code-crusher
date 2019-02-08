@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  list_date: 2019-02-07 13:50:05
+  avail_date: 2019-02-07
+  address_1: MyString
+  address_2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  type: 
+  beds: 1
+  baths: 1.5
+  pets: MyString
+  manager: MyString
+  phone: 1
+  email: MyString
+
+two:
+  price: 1
+  list_date: 2019-02-07 13:50:05
+  avail_date: 2019-02-07
+  address_1: MyString
+  address_2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  type: 
+  beds: 1
+  baths: 1.5
+  pets: MyString
+  manager: MyString
+  phone: 1
+  email: MyString
