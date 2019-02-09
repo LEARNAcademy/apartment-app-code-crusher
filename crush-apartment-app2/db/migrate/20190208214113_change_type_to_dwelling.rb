@@ -4,5 +4,6 @@ class ChangeTypeToDwelling < ActiveRecord::Migration[5.2]
   end
 
   def self.down
+    rename_column :apartments, :dwelling, :type
   end
 end
